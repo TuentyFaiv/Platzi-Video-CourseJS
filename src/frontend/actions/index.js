@@ -48,7 +48,7 @@ export const registerUser = (payload, redirecUrl) => {
 };
 
 export const loginUser = ({ email, password }, redirecUrl) => {
-  return (dispatch) => {
+  return dispatch => {
     axios({
       url: '/auth/sign-in',
       method: 'post',
